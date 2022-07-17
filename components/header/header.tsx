@@ -1,7 +1,6 @@
 import React from 'react';
 import cn from 'classnames';
 import { composeRefs } from '~/lib/compose-refs';
-import { useScrollHide } from '~/lib/use-scroll-hide';
 
 // Header
 type HeaderElement = React.ElementRef<'header'>;
@@ -11,7 +10,6 @@ interface HeaderProps extends React.ComponentPropsWithoutRef<'header'> {
 
 const Header = React.forwardRef<HeaderElement, HeaderProps>((props, forwardedRef) => {
   const { autoHide = false, ...headerProps } = props;
-  const sticky = useScrollHide();
   const headerRef = React.useRef<HTMLHeadElement>(null);
 
   return (

@@ -7,22 +7,12 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Luis Orbaiceta</title>
-
-        <meta name='description' content='This is my personal portfolio site' />
+        <title>Web template</title>
+        <meta name='description' content='This is my personal web template' />
       </Head>
 
       <div ref={section} className='h-screen grid place-content-center'>
-        <h1 className='text-6xl'>Architect</h1>
-        <a data-scroll-to href='#dev'>
-          Developer Anchor
-        </a>
-      </div>
-      <div className='h-screen grid place-content-center'>
-        <span id='dev' />
-        <h1 data-scroll data-scroll-speed={1} className='text-6xl'>
-          Developer
-        </h1>
+        <h1 className='text-6xl'>Welcome</h1>
       </div>
     </div>
   );
