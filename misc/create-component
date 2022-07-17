@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo 'What will your components name be?'
+
+read name
+
+echo 'Where is your components folder?'
+
+read folder
+
+destination=$folder/$name
+
+echo "Creating component in $destination"
+mkdir $destination
+touch $destination/index.ts
+touch $destination/$name.tsx
+touch $destination/$name.stories.tsx

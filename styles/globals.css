@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+  --selection: var(--accent-color);
+
+  --text-base: #000000;
+  --text-primary: #000000;
+  --text-secondary: white;
+  --text-accent-1: #9a9a9a;
+  --text-accent-2: #eeeeee;
+  --text-accent-color: red;
+
+  --accent-color: red;
+  --accent-1: #9a9a9a;
+  --accent-2: #eeeeee;
+
+  --font-sans: 'Helvetica', sans-serif;
+}
+
+[data-theme='dark'] {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --selection: var(--accent-color);
+
+  --text-base: white;
+  --text-primary: white;
+  --text-secondary: black;
+  --text-accent-1: #9a9a9a;
+  --text-accent-2: #eeeeee;
+  --text-accent-color: red;
+
+  --accent-2: #eeeeee;
+  --accent-1: #9a9a9a;
+  --accent-color: red;
+}
+
+@layer utilities {
+  .expand {
+    @apply top-0 right-0 left-0 bottom-0;
+  }
+  .absolute-expand {
+    @apply absolute expand;
+  }
+  .super-center {
+    @apply grid place-content-center;
+  }
+  .side {
+    @apply flex items-center;
+  }
+  .side-by-side {
+    @apply side justify-between;
+  }
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}

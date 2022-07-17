@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Luis Orbaiceta -- Designer/Developer
+
+# THANKS
+
+    To my mother, for giving me birth.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Javascript, React, Next.js, Vercel,
+    Modernizr, Normalize.css
